@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="14dp"
+    android:background="@color/cardview_dark_background"
+    app:cardCornerRadius="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:layout_width="1000dp"
+            android:layout_height="150dp"
+            android:padding="2dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/imageview_Feeds" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Line 1"
+            android:textSize="20sp"
+            android:id="@+id/line1_txt_feeds"
+            android:textColor="@color/pink" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: KSHS 2500"
+            android:layout_marginLeft="200dp"
+            android:textSize="19sp"
+            android:id="@+id/line3_txt_feeds"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="line 2"
+            android:layout_marginTop="160dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:id="@+id/line2_txt_feeds"
+            android:layout_below="@+id/line1_txt_feeds"
+            android:layout_marginStart="8dp" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="@+id/line2_txt_feeds"
+            app:layout_constraintTop_toBottomOf="@+id/line2_txt_feeds"
+            android:layout_marginTop="240dp"
+            android:layout_marginLeft="115dp"
+            android:text="Like"
+            android:textColor="@color/hot_pink"
+            android:drawableLeft="@drawable/ic_thumbup_outlined"
+            android:id="@+id/Like_Button"
+            />
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="@+id/line2_txt_feeds"
+            app:layout_constraintTop_toBottomOf="@+id/line2_txt_feeds"
+            android:layout_marginTop="240dp"
+            android:layout_marginLeft="220dp"
+            android:text="Follow"
+            android:textColor="@color/hot_pink"
+            android:drawableLeft="@drawable/ic_follow"
+            android:id="@+id/Follow_Button"
+            />
+        <Button
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="@+id/line2_txt_feeds"
+        app:layout_constraintTop_toBottomOf="@+id/line2_txt_feeds"
+            android:layout_marginTop="240dp"
+        android:layout_marginLeft="5dp"
+        android:text="Request"
+            android:textColor="@color/hot_pink"
+        android:drawableLeft="@drawable/ic_request"
+        android:id="@+id/Request_Button"
+        />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
